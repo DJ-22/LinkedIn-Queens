@@ -8,11 +8,11 @@
 
 ## Table of Contents
 
-1. [Quick start](#-quick-start)
-2. [Project structure](#-project-structure)
-3. [Important Files](#-important-files)
-4. [Algorithm &amp; heuristics](#-algorithms-&-heuristics) ← *detailed*
-5. [Example](#-example)
+1. [Quick start](#quick-start)
+2. [Project structure](#project-structure)
+3. [Important Files](#important-files)
+4. [Algorithm &amp; heuristics](#algorithms-&-heuristics) ← *detailed*
+5. [Example](#example)
 6. [Future improvements](#future-improvements)
 
 ---
