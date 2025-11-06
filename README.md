@@ -46,10 +46,10 @@ python main.py
 ├── Queens-SampleCase/     </span><span># example boards (if present)</span><span>
 ├── config.py              </span><span># sample BOARD string, color mapping and RGB palette</span><span>
 ├── parser.py              </span><span># parseRegions(), buildGrid()</span><span>
-├── solver.py              </span><span># solve() — backtracking + heuristics</span><span>
+├── solver.py              </span><span># solve(): backtracking + heuristics</span><span>
 ├── visualizer.py          </span><span># pygame visualizer</span><span>
 ├── main.py                </span><span># entrypoint: parse -> solve -> visualize</span><span>
-└── requirements.txt       </span><span># optional</span><span>
+└── requirements.txt       </span><span># pygame</span><span>
 </span></span></code></div></div></pre>
 
 ---
