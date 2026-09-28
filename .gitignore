@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Browser extension build output (python extension/build.py)
+extension/vendor/
