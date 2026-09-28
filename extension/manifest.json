@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Queens Solver",
+    "description": "Adds a Solve button to queensgame.vercel.app levels, powered by the LinkedIn-Queens Python solver.",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["https://queensgame.vercel.app/*"],
+            "js": ["content.js"],
+            "css": ["content.css"],
+            "run_at": "document_idle"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["solver/frame.html"],
+            "matches": ["https://queensgame.vercel.app/*"]
+        }
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+    }
+}
