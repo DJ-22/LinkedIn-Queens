@@ -20,6 +20,23 @@ An n×n board is split into n coloured regions. Place n queens so that every row
 - **Solver, generator and app code** (`queens/`): see [queens/README.md](queens/README.md) for how the solver works.
 - **Tests** (`tests/`): see [tests/README.md](tests/README.md) for what each test checks.
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/menu.png" width="360" alt="Menu"><br>Menu</td>
+    <td align="center"><img src="docs/screenshots/size-picker.png" width="360" alt="Choosing a board size"><br>Choosing a board size</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/play.png" width="360" alt="Playing, with auto X and a clash"><br>Playing, with auto X and a clash</td>
+    <td align="center"><img src="docs/screenshots/win.png" width="360" alt="Winning a level"><br>Winning a level</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/solver.png" width="360" alt="The solver after its replay"><br>The solver after its replay</td>
+    <td align="center"><img src="docs/screenshots/extension.png" width="360" alt="The extension on queensgame.vercel.app"><br>The extension on queensgame.vercel.app</td>
+  </tr>
+</table>
+
 ## Requirements
 
 - Python 3.12 or newer. The solver replay uses `sys.monitoring`, which arrived in 3.12.
