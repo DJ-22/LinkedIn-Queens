@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linkedin-queens"
+version = "1.0.0"
+description = "Fast solver for LinkedIn's Queens puzzle, with a pygame app to play or watch random levels"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Daksh Jain" }]
+keywords = ["queens", "puzzle", "solver", "backtracking", "pygame"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+]
+dependencies = ["pygame>=2.6,<3"]
+
+[project.optional-dependencies]
+dev = ["pylint>=4,<5"]
+
+[project.urls]
+Repository = "https://github.com/DJ-22/LinkedIn-Queens"
+Issues = "https://github.com/DJ-22/LinkedIn-Queens/issues"
+
+[tool.setuptools]
+packages = ["queens"]
+
+[tool.pylint.main]
+extension-pkg-allow-list = ["pygame"]
+py-version = "3.12"
+
+[tool.pylint.typecheck]
+generated-members = ['monitoring\..*']
+
+[tool.pylint.format]
+max-line-length = 79
+max-module-lines = 1200
+
+[tool.pylint.design]
+max-args = 8
+max-positional-arguments = 8
+max-attributes = 20
+max-locals = 20
+min-public-methods = 1
+
+[tool.pylint."messages control"]
+disable = [
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+]
