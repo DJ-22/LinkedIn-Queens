@@ -1,7 +1,3 @@
-"""Run this once before loading the extension, and again after editing anything
-in queens/ (then hit "Reload" on the extension).
-"""
-
 import io
 import shutil
 import tarfile
@@ -21,7 +17,7 @@ PYODIDE_FILES = (
 )
 DOWNLOAD_TIMEOUT = 120
 
-QUEENS_FILES = ("__init__.py", "board_parser.py", "solver.py")
+QUEENS_FILES = ("__init__.py", "board_parser.py", "rules.py", "solver.py")
 
 EXTENSION_DIR = Path(__file__).resolve().parent
 QUEENS_DIR = EXTENSION_DIR.parent / "queens"
