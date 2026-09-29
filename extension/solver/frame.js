@@ -1,6 +1,11 @@
 const SITE_ORIGIN = "https://queensgame.vercel.app";
 const CONNECT_MESSAGE = "queens-solver-connect";
-const QUEENS_FILES = ["__init__.py", "board_parser.py", "solver.py"];
+const QUEENS_FILES = [
+    "__init__.py",
+    "board_parser.py",
+    "rules.py",
+    "solver.py",
+];
 const MISSING_FILES =
     "Solver files are missing; run python extension/build.py and reload the extension";
 
