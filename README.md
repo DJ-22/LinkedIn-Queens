@@ -4,6 +4,8 @@
 
 A solver for the Queens puzzle from LinkedIn's daily games. It comes with a pygame app for playing and watching random levels, and a Chromium extension that solves levels on [queensgame.vercel.app](https://queensgame.vercel.app).
 
+> This is an unofficial project. It isn't affiliated with, endorsed by or connected to LinkedIn.
+
 ## The puzzle
 
 An n×n board is split into n coloured regions. Place n queens so that every row, every column and every region holds exactly one queen, and no two queens touch, not even diagonally.
