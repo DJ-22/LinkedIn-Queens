@@ -1,5 +1,7 @@
 # LinkedIn Queens
 
+[![CI](https://github.com/DJ-22/LinkedIn-Queens/actions/workflows/ci.yml/badge.svg)](https://github.com/DJ-22/LinkedIn-Queens/actions/workflows/ci.yml)
+
 A solver for the Queens puzzle from LinkedIn's daily games. It comes with a pygame app for playing and watching random levels, and a Chromium extension that solves levels on [queensgame.vercel.app](https://queensgame.vercel.app).
 
 ## The puzzle
@@ -19,7 +21,7 @@ An n×n board is split into n coloured regions. Place n queens so that every row
 ## Requirements
 
 - Python 3.12 or newer. The solver replay uses `sys.monitoring`, which arrived in 3.12.
-- The packages in `requirements.txt`: pygame, plus pylint for linting.
+- pygame, from `requirements.txt`, to run the app. Development also needs pylint; see [Test and lint](#test-and-lint).
 
 ## Setup
 
@@ -45,9 +47,10 @@ python main.py
 
 ## Test and lint
 
-Run both from the repo root:
+Install the development tools once, then run both from the repo root:
 
 ```sh
+pip install -e ".[dev]"
 python -m unittest
 python -m pylint main.py queens tests
 ```
@@ -61,8 +64,8 @@ main.py            Starts the pygame app
 queens/            Solver, level generator, replay recorder and the pygame app
 tests/             unittest suite
 extension/         Chromium extension for queensgame.vercel.app
-requirements.txt   pygame and pylint
-pyproject.toml     Project metadata, dependencies and pylint settings
+requirements.txt   pygame, to run the app
+pyproject.toml     Project metadata, dependencies, dev tools and pylint settings
 .github/           CI workflow: tests and pylint on every push
 ```
 
