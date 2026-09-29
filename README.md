@@ -62,7 +62,8 @@ queens/            Solver, level generator, replay recorder and the pygame app
 tests/             unittest suite
 extension/         Chromium extension for queensgame.vercel.app
 requirements.txt   pygame and pylint
-.pylintrc          pylint settings
+pyproject.toml     Project metadata, dependencies and pylint settings
+.github/           CI workflow: tests and pylint on every push
 ```
 
 ## License
